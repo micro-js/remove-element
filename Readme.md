@@ -17,15 +17,18 @@ Remove a DOM element
 ```js
 var removeElement = require('@f/remove-element')
 
+function removeVnode (vnode) {
+  return removeElement(vnode.element)
+}
 ```
 
 ## API
 
-### removeElement(arg)
+### removeElement(node)
 
-- `arg` -
+- `node` - The DOM node you want to remove
 
-**Returns:**
+**Returns:** The removed node
 
 ## License
 
